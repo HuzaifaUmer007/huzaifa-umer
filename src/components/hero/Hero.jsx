@@ -28,25 +28,29 @@ const Hero = () => {
         <div
           className="col-lg-4 bg position-fixed d-none d-lg-block"
           style={{
-            background: 'linear-gradient(135deg, #000000 0%, #1a1a1a 25%, #333333 50%, #1a1a1a 75%, #000000 100%)'
+            background: 'url(../assets/img/hero/hero.jpeg)',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
           }}
         ></div>
         <div className="col-12 col-lg-8 offset-lg-4 home-details  text-center text-lg-start">
           <div>
           <div 
-          className="main-img-mobile d-sm-block d-lg-none rounded-ciricle"
-          style={{
-            background: 'linear-gradient(135deg, #000000 0%, #1a1a1a 25%, #333333 50%, #1a1a1a 75%, #000000 100%)', borderRadius:'50%'
-          }}
+          className="main-img-mobile d-sm-block d-lg-none rounded-ciricle  overflow-hidden"
+          
           >
-              {/* <Image
+              <Image
                 src={heroContent.heroMobileImage}
                 className="img-fluid "
                 alt="hero man"
                 width={500}
                 height={500}
-                style={{width:'100%',height:'100%', borderRadius:'50%'}}
-              /> */}
+                style={{
+                  width: '320px',
+                  height: '392px',
+                  marginTop: '-40px',
+                }}
+              />
             </div>
             <h1 className="text-uppercase poppins-font">
               {"I'm"} {heroContent.heroTitleName}.
